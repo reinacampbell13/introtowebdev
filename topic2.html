@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Security</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Website header -->
+    <header>
+        <h1>HTTP Security</h1>
+        <p>Understanding HTTPS and secure web communication</p>
+    </header>
+
+    <!-- Main navigation menu -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="topic1.html">How HTTP Works</a>
+        <a href="topic2.html">HTTP Security</a>
+        <a href="concepts.html">Key Concepts</a>
+        <a href="references.html">References</a>
+        <a href="about.html">About</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Why HTTP Security Matters</h2>
+            <p>
+                Traditional HTTP does not encrypt the information
+                being transmitted between a browser and server.
+                This means attackers may be able to intercept
+                or modify information traveling across a network.
+            </p>
+            <p>
+                HTTPS helps protect communication by using
+                Transport Layer Security (TLS) to encrypt data.
+                This is especially important for websites that
+                handle passwords, financial information,
+                and other sensitive data.
+            </p>
+        </section>
+
+        <section>
+            <h2>HTTP vs. HTTPS</h2>
+
+            <!-- Comparison table -->
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>HTTP</th>
+                    <th>HTTPS</th>
+                </tr>
+                <tr>
+                    <td>Encryption</td>
+                    <td>No encryption</td>
+                    <td>Uses TLS encryption</td>
+                </tr>
+                <tr>
+                    <td>Default Port</td>
+                    <td>80</td>
+                    <td>443</td>
+                </tr>
+                <tr>
+                    <td>Security</td>
+                    <td>Less secure</td>
+                    <td>Protects data in transit</td>
+                </tr>
+                <tr>
+                    <td>URL Prefix</td>
+                    <td>http://</td>
+                    <td>https://</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Benefits of HTTPS</h2>
+            <ul>
+                <li>Encrypts information sent over the network.</li>
+                <li>Helps prevent unauthorized changes to transmitted data.</li>
+                <li>Authenticates the website through digital certificates.</li>
+                <li>Improves privacy and user confidence.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Understanding TLS</h2>
+            <p>
+                Transport Layer Security (TLS) is a security
+                protocol used by HTTPS. It helps establish
+                an encrypted connection between the browser
+                and the web server.
+            </p>
+            <p>
+                TLS also uses digital certificates to help
+                verify the identity of the website.
+                Together, these features make online
+                communication safer.
+            </p>
+        </section>
+    </main>
+
+    <!-- Required course footer -->
+    <footer>
+        <p>
+            This website is a class project for
+            <a href="https://ksuweb.github.io/IT3203/">
+                IT 3203 Web Development
+            </a>
+            at Kennesaw State University.
+        </p>
+        <p>&copy; 2026 Reina Campbell</p>
+    </footer>
+
+</body>
+</html>
