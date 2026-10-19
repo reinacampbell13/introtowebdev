@@ -1,0 +1,212 @@
+
+/* 
+   IT 3203 Web Development Project
+   Topic: HTTP - The Communication Foundation of the Web
+   Author: Reina Campbell
+   This stylesheet is shared by all six HTML pages.
+*/
+
+/* ELEMENT SELECTOR: Sets the overall website appearance */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb;
+    color: #263445;
+    line-height: 1.6;
+}
+
+/* Styles the header at the top of every page */
+header {
+    background-color: #183153;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin-top: 10px;
+    color: #dce8f5;
+}
+
+/* FLEXBOX LAYOUT: Keeps navigation links aligned */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #254b75;
+    padding: 15px;
+}
+
+/* Styles links in the main navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* HOVER EFFECT: Changes navigation link color */
+nav a:hover {
+    background-color: #4e85bd;
+    color: white;
+}
+
+/* Centers the main website content */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Styles individual content sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #dce4ed;
+    border-radius: 8px;
+}
+
+/* Styles section headings */
+h2 {
+    color: #183153;
+    border-bottom: 2px solid #4e85bd;
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: #254b75;
+}
+
+/* Adds spacing between list items */
+li {
+    margin-bottom: 10px;
+}
+
+/* Styles regular links within the content */
+main a {
+    color: #1769aa;
+    font-weight: bold;
+}
+
+main a:hover {
+    color: #0b3f6d;
+    text-decoration: underline;
+}
+
+/* CLASS SELECTOR: CSS Grid for homepage cards */
+.page-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* CLASS SELECTOR: Styles individual cards */
+.card {
+    background-color: #eef5fc;
+    padding: 20px;
+    border: 1px solid #c9dced;
+    border-radius: 8px;
+}
+
+/* Adds a hover effect to homepage cards */
+.card:hover {
+    background-color: #dcecfb;
+}
+
+/* Styles tables used on the topic pages */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+/* Adds borders and spacing to table cells */
+th, td {
+    border: 1px solid #ccd8e5;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Highlights the table header */
+th {
+    background-color: #254b75;
+    color: white;
+}
+
+/* Alternates table row colors */
+tr:nth-child(even) {
+    background-color: #eef5fc;
+}
+
+/* Styles the HTTP communication diagram */
+.diagram {
+    background-color: #eef5fc;
+    border: 2px solid #4e85bd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* ID SELECTOR: Styles the HTTP image section */
+#http-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Keeps images within the page width */
+#http-image img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccd8e5;
+    border-radius: 8px;
+}
+
+/* Styles the footer on every page */
+footer {
+    background-color: #183153;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #c8e4ff;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Makes the layout work on smaller screens */
+@media (max-width: 600px) {
+    .page-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
