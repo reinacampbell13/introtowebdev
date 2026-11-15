@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Knowledge Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="quiz.js" defer></script>
+</head>
+<body>
+
+    <!-- Website header -->
+    <header>
+        <h1>HTTP Knowledge Quiz</h1>
+        <p>Test your understanding of HTTP and web communication!</p>
+    </header>
+
+    <!-- Main navigation menu -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="topic1.html">How HTTP Works</a>
+        <a href="topic2.html">HTTP Security</a>
+        <a href="concepts.html">Key Concepts</a>
+        <a href="references.html">References</a>
+        <a href="about.html">About</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+
+    <main>
+        <!-- Quiz instructions and timer -->
+        <section>
+            <h2>Quiz Instructions</h2>
+            <p>
+                Answer the following 10 questions about HTTP.
+                Each question is worth 10 points, for a
+                total of 100 points.
+            </p>
+            <p>
+                You have 10 minutes to complete the quiz.
+                A score of 70% or higher is passing.
+            </p>
+
+            <div id="timer">Time Remaining: 10:00</div>
+        </section>
+
+        <!-- Quiz form -->
+        <form id="quizForm">
+
+            <!-- Question 1: Multiple choice -->
+            <fieldset>
+                <legend>1. What does HTTP stand for?</legend>
+                <label><input type="radio" name="q1" value="a"> Hypertext Transfer Protocol</label>
+                <label><input type="radio" name="q1" value="b"> Hyperlink Text Processing Program</label>
+                <label><input type="radio" name="q1" value="c"> High Transfer Technology Protocol</label>
+            </fieldset>
+
+            <!-- Question 2: Multiple choice -->
+            <fieldset>
+                <legend>2. What is the main purpose of HTTP?</legend>
+                <label><input type="radio" name="q2" value="a"> To design website layouts</label>
+                <label><input type="radio" name="q2" value="b"> To transfer web resources between clients and servers</label>
+                <label><input type="radio" name="q2" value="c"> To store passwords</label>
+            </fieldset>
+
+            <!-- Question 3: Multiple choice -->
+            <fieldset>
+                <legend>3. Which HTTP method retrieves information?</legend>
+                <label><input type="radio" name="q3" value="a"> DELETE</label>
+                <label><input type="radio" name="q3" value="b"> POST</label>
+                <label><input type="radio" name="q3" value="c"> GET</label>
+            </fieldset>
+
+            <!-- Question 4: Multiple choice -->
+            <fieldset>
+                <legend>4. Which status code means a resource was not found?</legend>
+                <label><input type="radio" name="q4" value="a"> 200</label>
+                <label><input type="radio" name="q4" value="b"> 404</label>
+                <label><input type="radio" name="q4" value="c"> 201</label>
+            </fieldset>
+
+            <!-- Question 5: Fill in the blank -->
+            <fieldset>
+                <legend>5. What is the secure version of HTTP called?</legend>
+                <input type="text" name="q5" placeholder="Enter your answer">
+            </fieldset>
+
+            <!-- Question 6: Fill in the blank -->
+            <fieldset>
+                <legend>6. What type of system responds to client requests?</legend>
+                <input type="text" name="q6" placeholder="Enter your answer">
+            </fieldset>
+
+            <!-- Question 7: Fill in the blank -->
+            <fieldset>
+                <legend>7. What security protocol does HTTPS use?</legend>
+                <input type="text" name="q7" placeholder="Enter your answer">
+            </fieldset>
+
+            <!-- Question 8: True or False -->
+            <fieldset>
+                <legend>8. HTTP uses a request-response model.</legend>
+                <label><input type="radio" name="q8" value="true"> True</label>
+                <label><input type="radio" name="q8" value="false"> False</label>
+            </fieldset>
+
+            <!-- Question 9: True or False -->
+            <fieldset>
+                <legend>9. Traditional HTTP encrypts data automatically.</legend>
+                <label><input type="radio" name="q9" value="true"> True</label>
+                <label><input type="radio" name="q9" value="false"> False</label>
+            </fieldset>
+
+            <!-- Question 10: Multiple selection -->
+            <fieldset>
+                <legend>10. Which are benefits of HTTPS? Select all that apply.</legend>
+                <label><input type="checkbox" name="q10" value="a"> Encrypts data in transit</label>
+                <label><input type="checkbox" name="q10" value="b"> Helps authenticate websites</label>
+                <label><input type="checkbox" name="q10" value="c"> Guarantees websites have no malware</label>
+                <label><input type="checkbox" name="q10" value="d"> Helps protect data from modification in transit</label>
+            </fieldset>
+
+            <!-- Submit and reset buttons -->
+            <div class="quiz-buttons">
+                <button type="submit" id="submitBtn">Submit Quiz</button>
+                <button type="button" id="resetBtn">Retake Quiz</button>
+            </div>
+        </form>
+
+        <!-- JavaScript displays quiz results here -->
+        <section id="results" aria-live="polite" hidden></section>
+    </main>
+
+    <!-- Required class project footer -->
+    <footer>
+        <p>
+            This website is a class project for
+            <a href="https://ksuweb.github.io/IT3203/">
+                IT 3203 Intro to Web Development
+            </a>
+            at Kennesaw State University.
+        </p>
+        <p>&copy; 2026 Reina Campbell</p>
+    </footer>
+
+</body>
+</html>
