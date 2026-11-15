@@ -210,3 +210,211 @@ footer a:hover {
         padding: 15px;
     }
 }
+
+/* =========================================
+   MILESTONE 2: HTTP QUIZ STYLING
+   The following styles improve the quiz
+   appearance and display user results.
+   ========================================= */
+
+/* Styles the countdown timer with a blue background */
+#timer {
+    background-color: #254b75;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* Adds spacing around the entire quiz form */
+#quizForm {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+/* Styles each question as a separate white box */
+fieldset {
+    background-color: white;
+    border: 1px solid #dce4ed;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+/* Makes question titles bold and dark blue */
+legend {
+    color: #183153;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+/* Displays each answer choice on its own line */
+fieldset label {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Highlights answer choices when users hover over them */
+fieldset label:hover {
+    background-color: #eef5fc;
+}
+
+/* Adds spacing between radio buttons and answer text */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Styles the fill-in-the-blank text boxes */
+input[type="text"] {
+    width: 100%;
+    max-width: 450px;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #b9c9da;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Highlights text boxes when users click inside them */
+input[type="text"]:focus {
+    outline: 2px solid #4e85bd;
+    border-color: #254b75;
+}
+
+/* Uses Flexbox to arrange the quiz buttons */
+.quiz-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px 0;
+}
+
+/* Styles the Submit and Retake Quiz buttons */
+.quiz-buttons button {
+    background-color: #254b75;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Changes button color when users hover over them */
+.quiz-buttons button:hover {
+    background-color: #4e85bd;
+}
+
+/* Gives the Retake Quiz button a different color */
+#resetBtn {
+    background-color: #5b6573;
+}
+
+/* Adds a hover effect to the Retake Quiz button */
+#resetBtn:hover {
+    background-color: #3c4652;
+}
+
+/* Makes disabled buttons appear faded */
+.quiz-buttons button:disabled {
+    background-color: #aab4bf;
+    cursor: not-allowed;
+}
+
+/* Styles the overall quiz results section */
+#results {
+    margin-top: 30px;
+    padding: 25px;
+    border: 2px solid #dce4ed;
+    border-radius: 8px;
+    background-color: white;
+}
+
+/* Keeps the results hidden until the quiz is submitted */
+#results[hidden] {
+    display: none;
+}
+
+/* Centers the overall pass/fail score box */
+.final-result {
+    text-align: center;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Displays passing scores with green colors */
+.pass {
+    background-color: #e3f5e8;
+    color: #176b35;
+    border: 2px solid #3c9b5f;
+}
+
+/* Displays failing scores with red colors */
+.fail {
+    background-color: #fde8e8;
+    color: #a12626;
+    border: 2px solid #d9534f;
+}
+
+/* Adds spacing between individual question results */
+.question-result {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+/* Highlights correct answers in green */
+.correct {
+    background-color: #e3f5e8;
+    border-left: 5px solid #3c9b5f;
+}
+
+/* Highlights incorrect answers in red */
+.incorrect {
+    background-color: #fde8e8;
+    border-left: 5px solid #d9534f;
+}
+
+/* Makes the question feedback headings easy to read */
+.question-result h3 {
+    margin-top: 0;
+}
+
+/* Adjusts quiz layout for phones and smaller screens */
+@media (max-width: 600px) {
+
+    fieldset {
+        padding: 15px;
+    }
+
+    legend {
+        font-size: 16px;
+    }
+
+    .quiz-buttons {
+        flex-direction: column;
+    }
+
+    .quiz-buttons button {
+        width: 100%;
+    }
+
+    #timer {
+        font-size: 18px;
+    }
+}
